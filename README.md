@@ -64,7 +64,7 @@ make
 ```
 or
 ```bash
-c++ mylittleids.cpp -o IDS && ./IDS
+c++ mylittleids.cpp -o IDS
 ```
 execute:
 ```bash
