@@ -88,7 +88,7 @@ Checks if a port is open by attempting to connect to it.
 Prints "Port is open" in red if the connection is successful.
 Returns true if the port is open, otherwise false.
 
-###Makescript() Function
+### Makescript() Function
 Creates a Bash script named script.sh based on the check parameter.
 The script checks for authentication failures in the system logs using journalctl.
 
