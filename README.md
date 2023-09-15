@@ -63,7 +63,7 @@ To compile the program, use the provided Makefile. You can run `make name` to bu
 To run the program, execute the compiled binary. The program will check for open ports and monitor authentication failure attempts.
 
 ```bash
-./IDS
+./IDS```
 
 ### Understanding Output
 The program will first check a range of ports (from 1 to 1024) and report open ports in red.
