@@ -51,11 +51,26 @@ To compile the program, use the provided Makefile. You can run `make name` to bu
 ## 3. Usage
 
 ### Running the Program
-To run the program, execute the compiled binary. The program will check for open ports and monitor authentication failure attempts.
+To run the program, inside the folder execute:
 
+```bash
+make run
+```
+
+or the compiled and run the binary.
+Compile with:
+```bash
+make
+```
+or
+```bash
+c++ mylittleids.cpp -o IDS && ./IDS
+```
+execute:
 ```bash
 ./IDS
 ```
+The program will check for open ports and monitor authentication failure attempts.
 
 ### Understanding Output
 The program will first check a range of ports (from 1 to 1024) and report open ports in red.
@@ -115,7 +130,8 @@ Configuration options for customizing behavior.
 
 ## 7. Acknowledgments
 ### ChatGPT
-- **[CHATGPT](https://chat.openai.com/)
+- **[CHATGPT](https://chat.openai.com/)**
+Big Part of this project could be finish faster and better only with the IA's help.
 
 This project relies on several libraries and tools that have contributed to its functionality and success. We would like to acknowledge and express our gratitude to the following:
 
