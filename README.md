@@ -114,6 +114,9 @@ Integration with system monitoring and alerting mechanisms.
 Configuration options for customizing behavior.
 
 ## 7. Acknowledgments
+### ChatGPT
+- **[CHATGPT](https://chat.openai.com/)
+
 This project relies on several libraries and tools that have contributed to its functionality and success. We would like to acknowledge and express our gratitude to the following:
 
 - **C++ Standard Library**: The C++ Standard Library provides essential functionality for C++ programs. We appreciate the wealth of features and utilities it offers, which greatly simplify development.
