@@ -84,8 +84,8 @@ The program will check for open ports and monitor authentication failure attempt
 ### Understanding Output
 The program will first check a range of ports (from 1 to 1024) and report open ports in red.
 It will then monitor these open ports for incoming connections and print "Incoming connection accepted" for each connection.
-After port monitoring, the program checks the system's authentication logs for suspicious login attempts. Suspicious login attempts are printed in red, and successful login attempts are displayed in green.
-The program also creates and executes a Bash script to check for authentication failures using journalctl.
+After port monitoring, the program checks the system's authentication logs for suspicious login attempts. Suspicious login attempts are printed in red, and if no suspicious login attempts a message is displayed in green.
+The program also creates and executes a Bash script to check for authentication failures using journalctl or /var/log/auth.log log file.
 
 ## 4. Functionality
 ### exiting() Function
@@ -105,7 +105,7 @@ Returns true if the port is open, otherwise false.
 
 ### Makescript() Function
 Creates a Bash script named script.sh based on the check parameter.
-The script checks for authentication failures in the system logs using journalctl.
+The script checks for authentication failures in the system logs using journalctl or /var/log/auth.log log file.
 
 ### runscript() Function
 Executes the script.sh Bash script.
@@ -123,8 +123,15 @@ Calls Makescript before executing the script.
 ### Sample Output
 The program will display information about open ports, incoming connections, and authentication attempts.
 Ports found open will be printed in red.
+The program will try to connect to the port and probably will fail, will print probably an error:
+```bash
+error binding
+```
+If no errors trying to connect to the port, the program will enter in a loop and wait for incoming connections in the port allowing us to see info about who is connected to the port if happens.
+
+If no ports found open the program will print it in green.
 Suspicious login attempts will be printed in red.
-Successful login attempts will be printed in green.
+If no suspicious login attempts the program will print it in green.
 
 ## 6. Conclusion
 ### Summary
