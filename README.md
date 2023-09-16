@@ -1,30 +1,38 @@
-# MyLittleIDS
+# MyLittleIDS - DRACSIS
 
 ## Table of Contents
-0. [Downloads](#Downloads)
+0. [Downloads](#0-downloads)
     - [GITHUB](#Download)
-2. [Introduction](#introduction)
+1. [Introduction](#introduction)
     - [Overview](#overview)
     - [Purpose](#purpose)
-3. [Installation](#installation)
+2. [Installation](#installation)
     - [Prerequisites](#prerequisites)
     - [Compilation](#compilation)
-4. [Usage](#usage)
+3. [Usage](#usage)
     - [Running the Program](#running-the-program)
     - [Understanding Output](#understanding-output)
-5. [Functionality](#functionality)
+4. [Functionality](#functionality)
     - [`exiting` Function](#exiting-function)
     - [`monitorPort` Function](#monitorport-function)
     - [`isPortOpen` Function](#isportopen-function)
     - [`Makescript` Function](#makescript-function)
     - [`runscript` Function](#runscript-function)
-6. [Example](#example)
+5. [Example](#example)
     - [Running the Program](#running-the-program-1)
     - [Sample Output](#sample-output)
-7. [Conclusion](#conclusion)
+6. [Conclusion](#conclusion)
+    - [Cybersecurity Challenges](#cybersecurity-challenges)
+        - [Challenge 1](#challenge-1-port-scanning)
+        - [Challenge 2](#challenge-2-authentication-failure-monitoring)
+        - [Challenge 3](#challenge-3-real-time-connection-monitoring)
     - [Summary](#summary)
     - [Future Improvements](#future-improvements)
-
+7. [Acknowledgments](#acknowledgments)
+    - [CHATGPT](#chatgpt)
+    - [Libraries](#libraries)
+8. [Credits](#8-credits)
+    - [Dracsis](#dracsis)
 ---
 
 ## 0. Downloads
@@ -136,6 +144,32 @@ Suspicious login attempts will be printed in red.
 Successful login attempts will be printed in green.
 
 ## 6. Conclusion
+## Cybersecurity Challenges
+
+### Challenge 1: Port Scanning
+
+One common cybersecurity challenge is detecting open ports on a system. "MyLittleIDS" addresses this challenge as follows:
+
+- The program scans a range of ports from 1 to 1024 to identify open ports.
+
+- If an open port is detected, it is displayed in red. This can help system administrators identify potentially vulnerable services running on the system.
+
+### Challenge 2: Authentication Failure Monitoring
+
+Monitoring authentication failures is crucial for detecting unauthorized access attempts. "MyLittleIDS" provides the following capabilities:
+
+- It creates and executes a Bash script named script.sh to monitor authentication failures using journalctl.
+
+- Suspicious login attempts are displayed in red, making it easy to spot potentially malicious activity in the system logs.
+
+### Challenge 3: Real-time Connection Monitoring
+
+To enhance security, it's essential to monitor incoming connections in real-time. "MyLittleIDS" accomplishes this as follows:
+
+- The monitorPort function continuously listens for incoming connections on open ports.
+
+- If an incoming connection is detected, it is logged with the message "Incoming connection accepted."
+
 ### Summary
 "MyLittleIDS" is a simple Intrusion Detection System designed to check for open ports and monitor authentication logs on a Linux system. It provides basic functionality to detect potential security threats.
 
@@ -151,6 +185,8 @@ Configuration options for customizing behavior.
 ### ChatGPT
 - **[CHATGPT](https://chat.openai.com/)**
 Big Part of this project could be finish faster and better only with the IA's help.
+
+### Libraries
 
 This project relies on several libraries and tools that have contributed to its functionality and success. We would like to acknowledge and express our gratitude to the following:
 
