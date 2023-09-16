@@ -118,8 +118,7 @@ Calls Makescript before executing the script.
 ```bash
 ./IDS
 ```
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-!([https://imgur.com/a/OgW687f](https://imgur.com/gallery/OgW687f))
+![https://imgur.com/a/OgW687f](https://imgur.com/gallery/OgW687f)
 
 ### Sample Output
 The program will display information about open ports, incoming connections, and authentication attempts.
