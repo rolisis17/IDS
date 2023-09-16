@@ -1,7 +1,7 @@
 # MyLittleIDS
 
 ## Table of Contents
-0. [Downloads](#Download)
+0. [Downloads](#Downloads)
     - [GITHUB](#Download)
 2. [Introduction](#introduction)
     - [Overview](#overview)
