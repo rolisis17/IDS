@@ -125,6 +125,7 @@ Calls Makescript before executing the script.
 ./IDS
 ```
 ![https://imgur.com/a/OgW687f](https://imgur.com/gallery/OgW687f)
+
 IF FAIL: See image **[HERE](https://imgur.com/gallery/OgW687f)**
 
 ### Sample Output
