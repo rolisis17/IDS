@@ -119,7 +119,7 @@ Calls Makescript before executing the script.
 ./IDS
 ```
 
-![Sample Output](https://imgur.com/a/OgW687f)
+![Sample Output]([https://imgur.com/a/OgW687f](https://imgur.com/gallery/OgW687f))
 
 ### Sample Output
 The program will display information about open ports, incoming connections, and authentication attempts.
