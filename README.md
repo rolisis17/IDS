@@ -1,8 +1,8 @@
 # MyLittleIDS
 
 ## Table of Contents
-0. [Downloads](#**[Download]**)
-    - [GITHUB](#**[Download]**)
+0. [Downloads](#Download)
+    - [GITHUB](#Download)
 2. [Introduction](#introduction)
     - [Overview](#overview)
     - [Purpose](#purpose)
@@ -28,6 +28,7 @@
 ---
 
 ## 0. Downloads
+
 ### Download
 **[HERE](https://github.com/rolisis17/IDS.git)** - Download Source Code from **[GITHUB](https://github.com/rolisis17)**
 
