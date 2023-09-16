@@ -97,7 +97,7 @@ execute:
 The program will check for open ports and monitor authentication failure attempts.
 
 ### Understanding Output
-The program will first check a range of ports (from 1 to 1024) and report open ports in red.
+The program will first check a range of ports (from 0 to 1023) and report open ports in red.
 It will then monitor these open ports for incoming connections and print "Incoming connection accepted" for each connection.
 After port monitoring, the program checks the system's authentication logs for suspicious login attempts. Suspicious login attempts are printed in red, and successful login attempts are displayed in green.
 The program also creates and executes a Bash script to check for authentication failures using journalctl.
