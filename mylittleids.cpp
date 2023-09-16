@@ -133,11 +133,11 @@ int runscript(int check)
 // the main function will loop 1 to 1024 port to check if it is open and then run the script.
 
 int main() {
-    int port = 0;
+    int port = -1;
 	int count = 0;
 
     std::cout << "\033[0;93mCHECKING PORTS: \033[0m" << std::endl << std::endl;
- 	while (++port <= 1024)
+ 	while (++port <= 1023)
 	{
 		if (isPortOpen(port))
 		{
