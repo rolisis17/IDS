@@ -27,8 +27,9 @@
 
 ---
 
-## 0. Download
-### **[Download](https://github.com/rolisis17/IDS.git)** - Download Source Code from **[GITHUB](https://github.com/rolisis17)**
+## 0. Downloads
+### Download
+**[HERE](https://github.com/rolisis17/IDS.git)** - Download Source Code from **[GITHUB](https://github.com/rolisis17)**
 
 ## 1. Introduction
 
