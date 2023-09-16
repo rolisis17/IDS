@@ -43,6 +43,15 @@ The purpose of this program is to:
 Before using the "MyLittleIDS" program, ensure you have the following prerequisites:
 - A Linux-based operating system.
 - A C++ compiler (e.g., `g++`).
+```bash
+sudo apt update
+sudo apt install g++
+```
+- Make installed
+```bash
+sudo apt update
+sudo apt install Make
+```
 - Basic knowledge of Bash scripting.
 
 ### Compilation
