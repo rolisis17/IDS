@@ -1,29 +1,34 @@
 # MyLittleIDS
 
 ## Table of Contents
-1. [Introduction](#introduction)
+0. [Downloads](#Download)
+    - [GITHUB](#Download)
+2. [Introduction](#introduction)
     - [Overview](#overview)
     - [Purpose](#purpose)
-2. [Installation](#installation)
+3. [Installation](#installation)
     - [Prerequisites](#prerequisites)
     - [Compilation](#compilation)
-3. [Usage](#usage)
+4. [Usage](#usage)
     - [Running the Program](#running-the-program)
     - [Understanding Output](#understanding-output)
-4. [Functionality](#functionality)
+5. [Functionality](#functionality)
     - [`exiting` Function](#exiting-function)
     - [`monitorPort` Function](#monitorport-function)
     - [`isPortOpen` Function](#isportopen-function)
     - [`Makescript` Function](#makescript-function)
     - [`runscript` Function](#runscript-function)
-5. [Example](#example)
+6. [Example](#example)
     - [Running the Program](#running-the-program-1)
     - [Sample Output](#sample-output)
-6. [Conclusion](#conclusion)
+7. [Conclusion](#conclusion)
     - [Summary](#summary)
     - [Future Improvements](#future-improvements)
 
 ---
+
+## 0. Download
+### **[Download](https://github.com/rolisis17/IDS.git)** - Download Source Code from **[GITHUB](https://github.com/rolisis17)**
 
 ## 1. Introduction
 
@@ -55,7 +60,7 @@ sudo apt install Make
 - Basic knowledge of Bash scripting.
 
 ### Compilation
-To compile the program, use the provided Makefile. You can run `make` to build the program, and `make run` to execute it. The Makefile also includes a clean rule `make clean` for removing compiled files.
+To compile the program, use the provided Makefile. You can run `make name` to build the program, and `make run` to execute it. The Makefile also includes a `clean` rule for removing compiled files.
 
 ## 3. Usage
 
@@ -84,8 +89,8 @@ The program will check for open ports and monitor authentication failure attempt
 ### Understanding Output
 The program will first check a range of ports (from 1 to 1024) and report open ports in red.
 It will then monitor these open ports for incoming connections and print "Incoming connection accepted" for each connection.
-After port monitoring, the program checks the system's authentication logs for suspicious login attempts. Suspicious login attempts are printed in red, and if no suspicious login attempts a message is displayed in green.
-The program also creates and executes a Bash script to check for authentication failures using journalctl or /var/log/auth.log log file.
+After port monitoring, the program checks the system's authentication logs for suspicious login attempts. Suspicious login attempts are printed in red, and successful login attempts are displayed in green.
+The program also creates and executes a Bash script to check for authentication failures using journalctl.
 
 ## 4. Functionality
 ### exiting() Function
@@ -105,7 +110,7 @@ Returns true if the port is open, otherwise false.
 
 ### Makescript() Function
 Creates a Bash script named script.sh based on the check parameter.
-The script checks for authentication failures in the system logs using journalctl or /var/log/auth.log log file.
+The script checks for authentication failures in the system logs using journalctl.
 
 ### runscript() Function
 Executes the script.sh Bash script.
@@ -118,20 +123,14 @@ Calls Makescript before executing the script.
 ```bash
 ./IDS
 ```
-![https://imgur.com/gallery/OgW687f](https://i.imgur.com/l9b80wh.png)
+![https://imgur.com/a/OgW687f](https://imgur.com/gallery/OgW687f)
+IF FAIL: See image **[HERE](https://imgur.com/gallery/OgW687f)**
 
 ### Sample Output
 The program will display information about open ports, incoming connections, and authentication attempts.
 Ports found open will be printed in red.
-The program will try to connect to the port and probably will fail, will print probably an error:
-```bash
-error binding
-```
-If no errors trying to connect to the port, the program will enter in a loop and wait for incoming connections in the port allowing us to see info about who is connected to the port if happens.
-
-If no ports found open the program will print it in green.
 Suspicious login attempts will be printed in red.
-If no suspicious login attempts the program will print it in green.
+Successful login attempts will be printed in green.
 
 ## 6. Conclusion
 ### Summary
