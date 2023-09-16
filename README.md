@@ -55,7 +55,7 @@ sudo apt install Make
 - Basic knowledge of Bash scripting.
 
 ### Compilation
-To compile the program, use the provided Makefile. You can run `make name` to build the program, and `make run` to execute it. The Makefile also includes a `clean` rule for removing compiled files.
+To compile the program, use the provided Makefile. You can run `make` to build the program, and `make run` to execute it. The Makefile also includes a clean rule `make clean` for removing compiled files.
 
 ## 3. Usage
 
