@@ -150,7 +150,7 @@ Successful login attempts will be printed in green.
 
 One common cybersecurity challenge is detecting open ports on a system. "MyLittleIDS" addresses this challenge as follows:
 
-- The program scans a range of ports from 1 to 1024 to identify open ports.
+- The program scans a range of ports from 0 to 1023 to identify open ports.
 
 - If an open port is detected, it is displayed in red. This can help system administrators identify potentially vulnerable services running on the system.
 
